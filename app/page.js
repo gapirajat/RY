@@ -35,8 +35,7 @@ export default function Home() {
       <div ref={ref} className="h-[75dvh] flex flex-col items-center relative">
         <div className="flex flex-col w-fit ml-[5%] mt-[7%]">
           <span
-            className={`text-7xl font-bold bg-gradient-to-r from-violet-500 via-pink-500 to-violet-500 text-transparent bg-clip-text bg-300% animate-gradient opacity-0 transition-all delay-1000 duration-[2000ms] -translate-y-10  ${isIntersecting ? 'visible opacity-[95%] translate-y-[0]' : ''}`}
-          >
+            className={`text-7xl font-bold bg-gradient-to-r from-violet-500 via-pink-500 to-violet-500 text-transparent bg-clip-text bg-300% animate-gradient opacity-0 transition-all delay-1000 duration-[2000ms] -translate-y-10  ${isIntersecting ? 'visible opacity-[95%] translate-y-[0]' : ''}`} style={{WebkitBackgroundClip: 'text'}}>
             RUTAMBHARA
           </span>
           <MyComponent isIntersecting={isIntersecting} />
@@ -46,7 +45,7 @@ export default function Home() {
           <img className="h-full" src="Vector 1.svg" alt="" />
           <p className="absolute w-[4rem] top-[50%] left-[20%] rotate-[21deg] font-sans text-sm text-wrap">{typewriterText}</p>
         </div>
-        <button className={`absolute bottom-[2%] bg-pink-500 text-white font-semibold py-2 rounded-full border-[1px]  transition-all hover:bg-pink-600 px-[5%] opacity-0 duration-[2000ms] delay-[5000ms] translate-y-[3rem] ${isIntersecting?'opacity-[95%] -translate-y-[0rem]':''}`}>
+        <button className={`absolute bottom-[2%] bg-pink-500 text-white font-semibold py-2 rounded-full border-[1px]  transition-all hover:bg-pink-600 px-[5%] opacity-0 duration-[2000ms] delay-[5000ms] translate-y-[3rem] ${isIntersecting?'opacity-[95%] translate-y-[0rem]':''}`}>
           Reach out
         </button>
       </div>
@@ -77,8 +76,7 @@ export default function Home() {
       </div>
       <div className="h-[200dvh] pb-[4%] bg-pink-50 opacity-90 flex flex-col items-center">
         <span
-          className="text-[1.7rem] font-semibold bg-gradient-to-r from-pink-600 via-pink-500 to-violet-500 text-transparent bg-clip-text animate-gradient p-[3%] mt-[7%]"
-        >
+          className="text-[1.7rem] font-semibold bg-gradient-to-r from-pink-600 via-pink-500 to-violet-500 text-transparent bg-clip-text animate-gradient p-[3%] mt-[7%]"  style={{WebkitBackgroundClip: 'text'}}>
           Projects & Case Studies
         </span>
         <div className="h-[20%] w-[70%] relative mt-[4%]">
