@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+
+}
+
+* {
+    /* border: double black 1px ; */
+}
+
+@keyframes draw {
+    from {
+        stroke-dashoffset: 1058;  /* Adjust this value based on the length of the path */
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+#moving-grid {
+    /* Defining a 20px block size for the grid */
+    background: repeating-linear-gradient(
+                transparent,
+                transparent 39px,
+                #d1d5db 39px,
+                #d1d5db 40px,
+                transparent 40px
+            ),
+            repeating-linear-gradient(
+                90deg,
+                transparent,
+                transparent 41px,
+                #d1d5db 41px,
+                #d1d5db 42px,
+                transparent 42px
+            ); /* Set the size of the grid cells */
+    animation: moveGrid 15s linear infinite;
+}
+
+@keyframes moveGrid {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 800px 0px;
+    }
+}
+
+#myPath {
+    stroke: url(#a);
+    stroke-width: 3;
+    stroke-dasharray: 1000;  /* This value should match the total length of the path */
+    stroke-dashoffset: 1000;  /* This should initially match stroke-dasharray */
+    fill: none;
+    animation: draw 15s forwards ;  /* Adjust time as needed */
+}
+
