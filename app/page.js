@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 
 
 export default function Home() {
-  const words = ["Epsitek dasdasdsd", "Expertise"];
+  const words = ["Product designee", "UI/UX developer"];
   const typewriterText = useTypewriter(words);
 
 
