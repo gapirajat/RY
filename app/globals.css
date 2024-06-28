@@ -55,5 +55,6 @@
     stroke-dashoffset: 1000;  /* This should initially match stroke-dasharray */
     fill: none;
     animation: draw 15s forwards ;  /* Adjust time as needed */
+    animation-delay: 500ms;
 }
 
