@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 
 
 export default function Home() {
+  const [modal, setModal] = useState(0);
   const words = ["Product designer", "UI/UX developer"];
   const typewriterText = useTypewriter(words);
 
@@ -17,8 +18,10 @@ export default function Home() {
   });
 
 
+
   return (
     <>
+          {modal==3 && <div className="fixed w-full h-full z-40 flex"><div className="absolute top-0 h-[100%] w-[100%] opacity-50 bg-black -z-[10] cursor-pointer " onClick={()=>setModal(0)} ></div><div className="h-[80%] w-[80%] mx-auto mt-auto mb-[2%] overflow-y-scroll z-[500]"><img className="overflow-scroll" src="About us.png" alt=""/></div></div>}
     <div className="h-[2.5dvh] bg-red-600 text-white text-sm pl-[47%] ">Under development 🛠️</div>
       <nav className={`h-[15dvh] flex flex-row justify-center items-center gap-[6%] px-[5%] py-[2%] transition-all duration-[1500ms] delay-[3000ms] -translate-y-10 opacity-5 ${isIntersecting ? 'visible opacity-95 translate-y-0' : 'invisible'}`}>
         <a href="#" className="h-[50%] mr-auto flex">
@@ -80,7 +83,7 @@ export default function Home() {
           Projects & Case Studies
         </span>
         <div className="h-[20%] w-[70%] relative mt-[4%]">
-          <div className="pt-[1.7px] pb-[2.2px] px-[1.7px] h-full w-full rounded-[2rem] overflow-hidden bg-gradient-to-r from-red-300 to-purple-300 flex justify-center items-center">
+          <div className="pt-[1.7px] pb-[2.2px] px-[1.7px] h-full w-full rounded-[2rem] overflow-hidden bg-gradient-to-r from-red-300 to-purple-300 flex justify-center items-center shadow-xl hover:shadow-2xl cursor-pointer transition-all">
             <div className="rounded-[2rem] overflow-hidden bg-gradient-to-r from-pink-50 to-purple-200 h-full w-full justify-center items-center flex text-start">
               <div className="flex flex-row h-[80%] justify-between mx-[10%] items-center">
                 <div className="text-black h-full w-[50%] flex flex-col justify-center items-start gap-[3%]">
@@ -96,7 +99,7 @@ export default function Home() {
 
         </div>
         <div className="h-[20%] w-[70%] relative mt-[4%]">
-        <div className="pt-[1.7px] pb-[2.2px] px-[1.7px] h-full w-full rounded-[2rem] overflow-hidden bg-gradient-to-r from-red-300 to-purple-300 flex justify-center items-center">
+        <div className="pt-[1.7px] pb-[2.2px] px-[1.7px] h-full w-full rounded-[2rem] overflow-hidden bg-gradient-to-r from-red-300 to-purple-300 flex justify-center items-center hover:scale-[110%] cursor-pointer transition-all">
             <div className="rounded-[2rem] overflow-hidden bg-gradient-to-r from-pink-50 to-purple-200 h-full w-full justify-center items-center flex text-start">
               <div className="flex flex-row h-[80%] justify-between mx-[10%] items-center">
                 <div className="text-black h-full w-[50%] flex flex-col justify-center items-start gap-[3%]">
@@ -112,7 +115,8 @@ export default function Home() {
 
         </div>
         <div className="h-[20%] w-[70%] relative mt-[4%]">
-        <div className="pt-[1.7px] pb-[2.2px] px-[1.7px] h-full w-full rounded-[2rem] overflow-hidden bg-gradient-to-r from-red-300 to-purple-300 flex justify-center items-center">
+        <div className="pt-[1.7px] pb-[2.2px] px-[1.7px] h-full w-full rounded-[2rem] overflow-hidden bg-gradient-to-r from-red-300 to-purple-300 flex justify-center items-center shadow-xl hover:scale-[103%] hover:shadow-2xl cursor-pointer transition-all" onClick={()=>{setModal(3)}}>
+
             <div className="rounded-[2rem] overflow-hidden bg-gradient-to-r from-pink-50 to-purple-200 h-full w-full justify-center items-center flex text-start">
               <div className="flex flex-row h-[80%] justify-between mx-[10%] items-center">
                 <div className="text-black h-full w-[50%] flex flex-col justify-center items-start gap-[3%]">
@@ -155,6 +159,7 @@ export default function Home() {
 
         </div>
       </footer>
+
     </>
   );
 }
