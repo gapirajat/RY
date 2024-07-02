@@ -21,7 +21,7 @@ export default function Home() {
 
   return (
     <>
-          {modal==3 && <div className="fixed w-full h-full z-40 flex"><div className="absolute top-0 h-[100%] w-[100%] opacity-50 bg-black -z-[10] cursor-pointer " onClick={()=>setModal(0)} ></div><div className="h-[80%] w-[80%] mx-auto mt-auto mb-[2%] overflow-y-scroll z-[500]"><img className="overflow-scroll" src="About us.png" alt=""/></div></div>}
+          {modal==3 && <div className="fixed w-full h-full z-40 flex"><div className="absolute top-0 h-[100%] w-[100%] opacity-50 bg-black -z-[10] cursor-pointer " onClick={()=>setModal(0)} ></div><div className="h-[80%] w-[80%] mx-auto mt-auto mb-[2%] overflow-y-scroll z-[500]"><img className="overflow-scroll" src="p1.jpeg" alt=""/></div></div>}
     <div className="h-[2.5dvh] bg-red-600 text-white text-sm pl-[47%] ">Under development 🛠️</div>
       <nav className={`h-[15dvh] flex flex-row justify-center items-center gap-[6%] px-[5%] py-[2%] transition-all duration-[1500ms] delay-[3000ms] -translate-y-10 opacity-5 ${isIntersecting ? 'visible opacity-95 translate-y-0' : 'invisible'}`}>
         <a href="#" className="h-[50%] mr-auto flex">
