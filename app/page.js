@@ -80,7 +80,7 @@ export default function Home() {
 
         </div>
       </div>
-      <div className="h-[200dvh] pb-[4%] bg-pink-50 opacity-90 flex flex-col items-center">
+      <div className="h-[200dvh] pb-[8%] bg-pink-50 opacity-90 flex flex-col items-center">
         <span
           className="text-[1.7rem] font-semibold bg-gradient-to-r from-pink-600 via-pink-500 to-violet-500 text-transparent bg-clip-text animate-gradient p-[3%] mt-[7%]"  style={{WebkitBackgroundClip: 'text'}}>
           Projects & Case Studies
