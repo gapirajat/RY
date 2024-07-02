@@ -50,6 +50,7 @@ export default function project() {
         <line x1="6" y1="6" x2="18" y2="18" />
       </svg>
 
+      <img className="w-[80%] mx-auto" src="p1.jpeg" alt="" />
       <img className="w-[80%] mx-auto" src="About us.png" alt="" />
       <footer className="h-[45dvh] bg-pink-500 opacity-90 justify-center items-center">
         <div className="flex flex-row h-[80%] justify-between mx-[10%] items-center">
