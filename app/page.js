@@ -42,7 +42,7 @@ export default function Home() {
           <MyComponent isIntersecting={isIntersecting} />
         </div>
         <img className="absolute h-[85%] bottom-[35%] top-[1%]" src="bubble-gum-woman-remote-working-at-laptop.gif" alt="" />
-        <div className={`absolute right-[32%] bottom-[23%] h-[23%] opacity-0 transition-all delay-[1500ms] duration-[2000ms]  ${isIntersecting?'opacity-80':'translate-x-[3rem]'}`}>
+        <div className={`absolute right-[35%] bottom-[23%] h-[23%] opacity-0 transition-all delay-[1500ms] duration-[2000ms]  ${isIntersecting?'opacity-80':'translate-x-[3rem]'}`}>
           <img className={`h-full `} src="Group 143726405 (1).png" alt="" />
           {/* <p id="tt" className="absolute w-[4rem] top-[50%] left-[20%] rotate-[21deg] font-sans text-[0.7rem] text-wrap">{typewriterText}</p> */}
         </div>
