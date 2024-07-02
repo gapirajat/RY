@@ -87,7 +87,7 @@ export default function Home() {
         </span>
         <Link className={`h-[20%] w-[70%]  mt-[4%] transition-all relative`} href="project">        
 
-          <div className={`pt-[1.7px] pb-[2.2px] px-[1.7px] h-full w-full rounded-[2rem] overflow-hidden bg-gradient-to-r from-red-300 to-purple-300 flex justify-center items-center shadow-xl hover:shadow-2xl cursor-pointer transition-all`}>
+          <div className={`pt-[1.7px] pb-[2.2px] px-[1.7px] h-full w-full rounded-[2rem] overflow-hidden bg-gradient-to-r from-red-300 to-purple-300 flex justify-center items-center hover:scale-[110%] cursor-pointer transition-all`}>
             <div className="rounded-[2rem] overflow-hidden bg-gradient-to-r from-pink-50 to-purple-200 h-full w-full justify-center items-center flex text-start">
               <div className="flex flex-row h-[80%] justify-between mx-[10%] items-center">
                 <div className="text-black h-full w-[50%] flex flex-col justify-center items-start gap-[3%]">
@@ -121,7 +121,7 @@ export default function Home() {
 
         </Link>
         <Link className={`h-[20%] w-[70%]  mt-[4%] transition-all relative`} href="project"> 
-        <div className="pt-[1.7px] pb-[2.2px] px-[1.7px] h-full w-full rounded-[2rem] overflow-hidden bg-gradient-to-r from-red-300 to-purple-300 flex justify-center items-center shadow-xl hover:scale-[103%] hover:shadow-2xl cursor-pointer transition-all" onClick={()=>{setModal(3)}}>
+        <div className="pt-[1.7px] pb-[2.2px] px-[1.7px] h-full w-full rounded-[2rem] overflow-hidden bg-gradient-to-r from-red-300 to-purple-300 flex justify-center items-center hover:scale-[110%] cursor-pointer transition-all" onClick={()=>{setModal(3)}}>
 
             <div className="rounded-[2rem] overflow-hidden bg-gradient-to-r from-pink-50 to-purple-200 h-full w-full justify-center items-center flex text-start">
               <div className="flex flex-row h-[80%] justify-between mx-[10%] items-center">
