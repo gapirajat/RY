@@ -53,6 +53,8 @@
 
 #moving-grid {
     background-image: url('../public/grid.png');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 @keyframes moveGrid {
