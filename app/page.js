@@ -2,11 +2,13 @@
 import useTypewriter from "@/hooks/typewriter";
 import useIntersectionObserver from "@/hooks/useMultipleIntersectionObserver";
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 
+
 export default function Home() {
-  const [modal, setModal] = useState(0);
+  // const [modal, setModal] = useState(0);
   const words = ["Product designer", "UI/UX developer"];
   const typewriterText = useTypewriter(words);
 
@@ -21,10 +23,11 @@ export default function Home() {
 
   return (
     <>
-          {modal==3 && <div className="fixed w-full h-full z-40 flex"><div className="absolute top-0 h-[100%] w-[100%] opacity-50 bg-black -z-[10] cursor-pointer " onClick={()=>setModal(0)} ></div><div className="h-[80%] w-[80%] mx-auto mt-auto mb-[2%] overflow-y-scroll z-[500]"><img className="overflow-scroll" src="p1.jpeg" alt=""/></div></div>}
-    <div className="h-[2.5dvh] bg-red-600 text-white text-sm pl-[47%] ">Under development 🛠️</div>
+          {/* {modal==3 && <div className="fixed w-full h-full z-40 flex"><div className="absolute top-0 h-[100%] w-[100%] opacity-50 bg-black -z-[10] cursor-pointer " onClick={()=>setModal(0)} ></div><div className="h-[80%] w-[80%] mx-auto mt-auto mb-[2%] overflow-y-scroll z-[500]"><img className="overflow-scroll" src="p1.jpeg" alt=""/></div></div>} */}
+    <div className="h-[3dvh] bg-red-600 text-white text-sm pl-[47%] ">Under development 🛠️</div>
       <nav className={`h-[15dvh] flex flex-row justify-center items-center gap-[6%] px-[5%] py-[2%] transition-all duration-[1500ms] delay-[3000ms] -translate-y-10 opacity-5 ${isIntersecting ? 'visible opacity-95 translate-y-0' : 'invisible'}`}>
-        <a href="#" className="h-[50%] mr-auto flex">
+        
+        <a href="/" className="h-[50%] mr-auto flex">
           <img className="h-full" src="bubble-gum-womans-head 1.gif" alt="" />
           <img className="h-full" src="Ruta.svg" alt="" />
         </a>
@@ -82,8 +85,9 @@ export default function Home() {
           className="text-[1.7rem] font-semibold bg-gradient-to-r from-pink-600 via-pink-500 to-violet-500 text-transparent bg-clip-text animate-gradient p-[3%] mt-[7%]"  style={{WebkitBackgroundClip: 'text'}}>
           Projects & Case Studies
         </span>
-        <div className="h-[20%] w-[70%] relative mt-[4%]">
-          <div className="pt-[1.7px] pb-[2.2px] px-[1.7px] h-full w-full rounded-[2rem] overflow-hidden bg-gradient-to-r from-red-300 to-purple-300 flex justify-center items-center shadow-xl hover:shadow-2xl cursor-pointer transition-all">
+        <Link className={`h-[20%] w-[70%]  mt-[4%] transition-all relative`} href="project">        
+
+          <div className={`pt-[1.7px] pb-[2.2px] px-[1.7px] h-full w-full rounded-[2rem] overflow-hidden bg-gradient-to-r from-red-300 to-purple-300 flex justify-center items-center shadow-xl hover:shadow-2xl cursor-pointer transition-all`}>
             <div className="rounded-[2rem] overflow-hidden bg-gradient-to-r from-pink-50 to-purple-200 h-full w-full justify-center items-center flex text-start">
               <div className="flex flex-row h-[80%] justify-between mx-[10%] items-center">
                 <div className="text-black h-full w-[50%] flex flex-col justify-center items-start gap-[3%]">
@@ -95,10 +99,12 @@ export default function Home() {
                 <img className="w-[50%] h-[75%]" src="Rectangle 39460.png" alt="" />
               </div>
             </div>
-          </div>
+          </div>        
+        </Link>
 
-        </div>
-        <div className="h-[20%] w-[70%] relative mt-[4%]">
+
+
+        <Link className={`h-[20%] w-[70%]  mt-[4%] transition-all relative`} href="project"> 
         <div className="pt-[1.7px] pb-[2.2px] px-[1.7px] h-full w-full rounded-[2rem] overflow-hidden bg-gradient-to-r from-red-300 to-purple-300 flex justify-center items-center hover:scale-[110%] cursor-pointer transition-all">
             <div className="rounded-[2rem] overflow-hidden bg-gradient-to-r from-pink-50 to-purple-200 h-full w-full justify-center items-center flex text-start">
               <div className="flex flex-row h-[80%] justify-between mx-[10%] items-center">
@@ -113,8 +119,8 @@ export default function Home() {
             </div>
           </div>
 
-        </div>
-        <div className="h-[20%] w-[70%] relative mt-[4%]">
+        </Link>
+        <Link className={`h-[20%] w-[70%]  mt-[4%] transition-all relative`} href="project"> 
         <div className="pt-[1.7px] pb-[2.2px] px-[1.7px] h-full w-full rounded-[2rem] overflow-hidden bg-gradient-to-r from-red-300 to-purple-300 flex justify-center items-center shadow-xl hover:scale-[103%] hover:shadow-2xl cursor-pointer transition-all" onClick={()=>{setModal(3)}}>
 
             <div className="rounded-[2rem] overflow-hidden bg-gradient-to-r from-pink-50 to-purple-200 h-full w-full justify-center items-center flex text-start">
@@ -130,7 +136,7 @@ export default function Home() {
             </div>
           </div>
 
-        </div>
+        </Link>
         <p className="ml-auto flex flex-row justify-center items-center opacity-35 mt-[2%] mr-[15%] hover:opacity-60 cursor-pointer">View All <svg width="40" height="40" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
           <line x1="10" y1="50" x2="70" y2="50" stroke="black" stroke-width="5" />
           <line x1="50" y1="30" x2="70" y2="50" stroke="black" stroke-width="5" />
