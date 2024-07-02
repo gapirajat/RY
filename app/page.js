@@ -45,7 +45,7 @@ export default function Home() {
           <img className="h-full" src="Vector 1.svg" alt="" />
           <p id="tt" className="absolute w-[4rem] top-[50%] left-[20%] rotate-[21deg] font-sans text-[0.7rem] text-wrap">{typewriterText}</p>
         </div>
-        <button className={`absolute bottom-[2%] bg-pink-500 text-white font-semibold py-2 rounded-full border-[1px]  transition-all hover:bg-pink-600 px-[3%] opacity-0 duration-[2000ms] delay-[3000ms] transform translate-y-[200px] ${isIntersecting?'opacity-[95%] translate-y-[10px]':''}`}>
+        <button className={`absolute bottom-[2%] bg-pink-500 text-white font-semibold py-2 rounded-full border-[1px]  transition-all hover:bg-pink-600 px-[3%] opacity-0 duration-[2000ms] delay-[3000ms] ${isIntersecting?'opacity-[95%] translate-y-[0]':'translate-y-[4rem]'}`}>
           Reach out
         </button>
       </div>
