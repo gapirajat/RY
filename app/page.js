@@ -19,6 +19,7 @@ export default function Home() {
 
   return (
     <>
+    <div className="h-[2.5dvh] bg-red-600 text-white text-sm pl-[47%] ">Under development 🛠️</div>
       <nav className={`h-[15dvh] flex flex-row justify-center items-center gap-[6%] px-[5%] py-[2%] transition-all duration-[1500ms] delay-[3000ms] -translate-y-10 opacity-5 ${isIntersecting ? 'visible opacity-95 translate-y-0' : 'invisible'}`}>
         <a href="#" className="h-[50%] mr-auto flex">
           <img className="h-full" src="bubble-gum-womans-head 1.gif" alt="" />
@@ -32,33 +33,32 @@ export default function Home() {
           Download CV
         </button>
       </nav>
-      <div ref={ref} className="h-[75dvh] flex flex-col items-center relative">
+      <div ref={ref} className="h-[70dvh] flex flex-col items-center relative">
         <div className="flex flex-col w-fit ml-[5%] mt-[5%]">
           <span
-            className={`text-7xl font-bold bg-gradient-to-r from-violet-500 via-pink-500 to-violet-500 text-transparent bg-clip-text bg-300% animate-gradient opacity-0 transition-all delay-1000 duration-[2000ms] -translate-y-10  ${isIntersecting ? 'visible opacity-[95%] translate-y-[0]' : ''}`} style={{WebkitBackgroundClip: 'text'}}>
+            className={`text-8xl font-bold bg-gradient-to-r from-violet-500 via-pink-500 to-violet-500 text-transparent bg-clip-text bg-300% animate-gradient opacity-0 transition-all delay-1000 duration-[2000ms] -translate-y-10  ${isIntersecting ? 'visible opacity-[95%] translate-y-[0]' : ''}`} style={{WebkitBackgroundClip: 'text'}}>
             RUTAMBHARA
           </span>
           <MyComponent isIntersecting={isIntersecting} />
         </div>
-        <img className="absolute" src="bubble-gum-woman-remote-working-at-laptop.gif" alt="" />
-        <div className={`absolute right-[32%] bottom-[23%] h-[23%] opacity-0 transition-all delay-[1500ms] duration-300 ${isIntersecting?'opacity-60':''}`}>
-          <img className="h-full" src="Vector 1.svg" alt="" />
-          <p id="tt" className="absolute w-[4rem] top-[50%] left-[20%] rotate-[21deg] font-sans text-[0.7rem] text-wrap">{typewriterText}</p>
+        <img className="absolute h-[85%] bottom-[35%] top-[1%]" src="bubble-gum-woman-remote-working-at-laptop.gif" alt="" />
+        <div className={`absolute right-[32%] bottom-[23%] h-[23%] opacity-0 transition-all delay-[1500ms] duration-[2000ms]  ${isIntersecting?'opacity-80':'translate-x-[3rem]'}`}>
+          <img className={`h-full `} src="Group 143726405 (1).png" alt="" />
+          {/* <p id="tt" className="absolute w-[4rem] top-[50%] left-[20%] rotate-[21deg] font-sans text-[0.7rem] text-wrap">{typewriterText}</p> */}
         </div>
-        <button className={`absolute bottom-[2%] bg-pink-500 text-white font-semibold py-2 rounded-full border-[1px]  transition-all hover:bg-pink-600 px-[3%] opacity-0 duration-[2000ms] delay-[3000ms] ${isIntersecting?'opacity-[95%] translate-y-[0]':'translate-y-[4rem]'}`}>
+        <button className={`absolute bottom-[2%] bg-pink-500 text-white font-semibold py-2 px-8 rounded-full border-[1px]  transition-all hover:bg-pink-600 opacity-0 duration-[2000ms] delay-[3000ms] ${isIntersecting?'opacity-[95%] -translate-y-[2rem]':'translate-y-[4rem]'}`}>
           Reach out
         </button>
       </div>
 
 
-      <div className="h-[90dvh] flex flex-col w-full items-center">
-        <div className="h-[40%] w-[70%] mb-[7%] relative">
-          <div className="pt-[1.7px] pb-[2.2px] px-[1.7px] h-full w-full rounded-[2rem] overflow-hidden bg-gradient-to-r from-red-300 to-purple-300 flex justify-center items-center  mt-[10%] shadow-2xl drop-shadow-2xl">
+      <div className="h-[80dvh] flex flex-col w-full items-center">
+        <div className="h-[50%] w-[70%] relative">
+          <div className="pt-[1.7px] pb-[2.2px] px-[1.7px] h-full w-full rounded-[2rem] overflow-hidden bg-gradient-to-r from-red-300 to-purple-300 flex justify-center items-center shadow-2xl drop-shadow-2xl">
             <div className="rounded-[2rem] overflow-hidden bg-gradient-to-r from-pink-50 to-purple-200 h-full w-full justify-center items-center flex text-center">
               <p className="m-[3%]">              I have a total <span className="font-bold text-nowrap h-fit">4.5 years</span> of experience creating user friendly experiences and interactive visuals for all kind of users. I like merging creativity with the purpose.</p>
 
             </div>
-            <p className="absolute mt-[10%] z-20">            </p>
           </div>
 
         </div>
@@ -161,7 +161,7 @@ export default function Home() {
 
 function MyComponent(isIntersecting) {
   return (
-    <svg className={`scale-75 ml-auto -mr-[10%] ${isIntersecting?'':''}`} width="271" height="50" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg className={`scale-100 ml-auto -mr-[7%] ${isIntersecting?'':''}`} width="271" height="50" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path id="myPath" d="m57.17 2.92.9-1.5H39.94l-.29.5-9.48 16.64h-.03L20.66 1.92l-.29-.5H2.24l.9 1.5 18.47 31.14V49h17.04V34.1L57.17 2.92Zm31.9 45.4.23.68H106.97l-.5-1.35L89.72 2.07l-.24-.66H67l-.23.66L50 47.65 49.5 49H67.2l.22-.68 1.78-5.34h18.1l1.78 5.34Zm22.85-.32v1h23.9c9.45 0 16.02-2.48 20.21-6.8 4.2-4.31 5.86-10.3 5.86-17 0-6.71-1.66-12.7-5.86-17.01-4.2-4.32-10.76-6.78-20.2-6.78h-23.91V48Zm89.64.32.23.68H219.46l-.5-1.35L202.2 2.07l-.24-.66H179.5l-.24.66-16.76 45.58L162 49h17.68l.22-.68 1.78-5.34h18.1l1.78 5.34Zm27.18.02.24.66h22.45l.24-.66 16.77-45.58.5-1.35h-17.67l-.23.68-10.73 30.8h-.21l-10.73-30.8-.23-.68h-17.67l.5 1.35 16.77 45.58ZM82.94 29.85h-9.39l4.11-12.33h1.16l4.11 12.33Zm61.87-4.64c0 3.44-.98 5.7-2.48 7.1-1.52 1.4-3.73 2.1-6.5 2.1H129V16h6.81c2.78 0 5 .68 6.51 2.08 1.5 1.4 2.48 3.64 2.48 7.12Zm50.61 4.64h-9.38l4.11-12.33h1.16l4.11 12.33Z" stroke="url(#a)" stroke-width="2" />
       <defs >
         <linearGradient id="a" x1="4" y1="17" x2="268" y2="17" gradientUnits="userSpaceOnUse">
