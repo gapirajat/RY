@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 
 
 export default function Home() {
-  const words = ["Product designee", "UI/UX developer"];
+  const words = ["Product designer", "UI/UX developer"];
   const typewriterText = useTypewriter(words);
 
 
@@ -19,7 +19,7 @@ export default function Home() {
 
   return (
     <>
-      <nav className={`h-[15dvh] flex flex-row justify-center items-center gap-[6%] px-[5%] py-[2%] transition-all duration-[1500ms] delay-[5000ms] -translate-y-10 opacity-5 ${isIntersecting ? 'visible opacity-95 translate-y-0' : 'invisible'}`}>
+      <nav className={`h-[15dvh] flex flex-row justify-center items-center gap-[6%] px-[5%] py-[2%] transition-all duration-[1500ms] delay-[3000ms] -translate-y-10 opacity-5 ${isIntersecting ? 'visible opacity-95 translate-y-0' : 'invisible'}`}>
         <a href="#" className="h-[50%] mr-auto flex">
           <img className="h-full" src="bubble-gum-womans-head 1.gif" alt="" />
           <img className="h-full" src="Ruta.svg" alt="" />
@@ -33,7 +33,7 @@ export default function Home() {
         </button>
       </nav>
       <div ref={ref} className="h-[75dvh] flex flex-col items-center relative">
-        <div className="flex flex-col w-fit ml-[5%] mt-[7%]">
+        <div className="flex flex-col w-fit ml-[5%] mt-[5%]">
           <span
             className={`text-7xl font-bold bg-gradient-to-r from-violet-500 via-pink-500 to-violet-500 text-transparent bg-clip-text bg-300% animate-gradient opacity-0 transition-all delay-1000 duration-[2000ms] -translate-y-10  ${isIntersecting ? 'visible opacity-[95%] translate-y-[0]' : ''}`} style={{WebkitBackgroundClip: 'text'}}>
             RUTAMBHARA
@@ -43,15 +43,15 @@ export default function Home() {
         <img className="absolute" src="bubble-gum-woman-remote-working-at-laptop.gif" alt="" />
         <div className={`absolute right-[32%] bottom-[23%] h-[23%] opacity-0 transition-all delay-[1500ms] duration-300 ${isIntersecting?'opacity-60':''}`}>
           <img className="h-full" src="Vector 1.svg" alt="" />
-          <p className="absolute w-[4rem] top-[50%] left-[20%] rotate-[21deg] font-sans text-sm text-wrap">{typewriterText}</p>
+          <p id="tt" className="absolute w-[4rem] top-[50%] left-[20%] rotate-[21deg] font-sans text-[0.7rem] text-wrap">{typewriterText}</p>
         </div>
-        <button className={`absolute bottom-[2%] bg-pink-500 text-white font-semibold py-2 rounded-full border-[1px]  transition-all hover:bg-pink-600 px-[5%] opacity-0 duration-[2000ms] delay-[5000ms] translate-y-[3rem] ${isIntersecting?'opacity-[95%] translate-y-[0rem]':''}`}>
+        <button className={`absolute bottom-[2%] bg-pink-500 text-white font-semibold py-2 rounded-full border-[1px]  transition-all hover:bg-pink-600 px-[3%] opacity-0 duration-[2000ms] delay-[3000ms] transform translate-y-[3rem] ${isIntersecting?'opacity-[95%] translate-y-[0.1rem]':''}`}>
           Reach out
         </button>
       </div>
 
 
-      <div className="h-[100dvh] flex flex-col w-full items-center">
+      <div className="h-[90dvh] flex flex-col w-full items-center">
         <div className="h-[40%] w-[70%] mb-[7%] relative">
           <div className="pt-[1.7px] pb-[2.2px] px-[1.7px] h-full w-full rounded-[2rem] overflow-hidden bg-gradient-to-r from-red-300 to-purple-300 flex justify-center items-center  mt-[10%] shadow-2xl drop-shadow-2xl">
             <div className="rounded-[2rem] overflow-hidden bg-gradient-to-r from-pink-50 to-purple-200 h-full w-full justify-center items-center flex text-center">
@@ -96,32 +96,32 @@ export default function Home() {
 
         </div>
         <div className="h-[20%] w-[70%] relative mt-[4%]">
-          <div className="pt-[1.7px] pb-[2.2px] px-[1.7px] h-full w-full rounded-[2rem] overflow-hidden bg-gradient-to-r from-red-300 to-purple-300 flex justify-center items-center">
-            <div className="rounded-[2rem] overflow-hidden bg-gradient-to-r from-pink-50 to-purple-200 h-full w-full justify-center items-center flex text-center">
+        <div className="pt-[1.7px] pb-[2.2px] px-[1.7px] h-full w-full rounded-[2rem] overflow-hidden bg-gradient-to-r from-red-300 to-purple-300 flex justify-center items-center">
+            <div className="rounded-[2rem] overflow-hidden bg-gradient-to-r from-pink-50 to-purple-200 h-full w-full justify-center items-center flex text-start">
               <div className="flex flex-row h-[80%] justify-between mx-[10%] items-center">
                 <div className="text-black h-full w-[50%] flex flex-col justify-center items-start gap-[3%]">
-                  <p className="font-semibold font-sans text-2xl">I'm grateful for your time and attention</p>
+                  <p className="font-semibold font-sans text-2xl">Case Study Headline</p>
 
-                  <p className="text-sm">Email - ruthambara.r.yadav@gmail.com</p>
-                  <p className="text-sm">Contact - +91 7744857116</p>
+                  <p className="text-sm">Case Study Category</p>
+                  <p className="text-sm">Here you can add some meta description about your case study like what are the research methods used</p>
                 </div>
-                <img className="h-[170%] mb-[10%] " src="bubble-gum-woman-waiting-and-looking-at-hourglass.gif" alt="" />
+                <img className="w-[50%] h-[75%]" src="Rectangle 39460 (1).png" alt="" />
               </div>
             </div>
           </div>
 
         </div>
         <div className="h-[20%] w-[70%] relative mt-[4%]">
-          <div className="pt-[1.7px] pb-[2.2px] px-[1.7px] h-full w-full rounded-[2rem] overflow-hidden bg-gradient-to-r from-red-300 to-purple-300 flex justify-center items-center">
-            <div className="rounded-[2rem] overflow-hidden bg-gradient-to-r from-pink-50 to-purple-200 h-full w-full justify-center items-center flex text-center">
+        <div className="pt-[1.7px] pb-[2.2px] px-[1.7px] h-full w-full rounded-[2rem] overflow-hidden bg-gradient-to-r from-red-300 to-purple-300 flex justify-center items-center">
+            <div className="rounded-[2rem] overflow-hidden bg-gradient-to-r from-pink-50 to-purple-200 h-full w-full justify-center items-center flex text-start">
               <div className="flex flex-row h-[80%] justify-between mx-[10%] items-center">
                 <div className="text-black h-full w-[50%] flex flex-col justify-center items-start gap-[3%]">
-                  <p className="font-semibold font-sans text-2xl">I'm grateful for your time and attention</p>
+                  <p className="font-semibold font-sans text-2xl">Case Study Headline</p>
 
-                  <p className="text-sm">Email - ruthambara.r.yadav@gmail.com</p>
-                  <p className="text-sm">Contact - +91 7744857116</p>
+                  <p className="text-sm">Case Study Category</p>
+                  <p className="text-sm">Here you can add some meta description about your case study like what are the research methods used</p>
                 </div>
-                <img className="h-[170%] mb-[10%] " src="bubble-gum-woman-waiting-and-looking-at-hourglass.gif" alt="" />
+                <img className="w-[50%] h-[75%]" src="Rectangle 39460 (copy 1).png" alt="" />
               </div>
             </div>
           </div>

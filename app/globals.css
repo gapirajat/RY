@@ -10,6 +10,13 @@
     /* border: double black 1px ; */
 }
 
+@font-face {
+    font-family: 'PlaywriteITModerna-Regular';
+    src: url('../public/PlaywriteITModerna-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
 @keyframes draw {
     from {
         stroke-dashoffset: 1058;  /* Adjust this value based on the length of the path */
@@ -18,6 +25,10 @@
         stroke-dashoffset: 0;
     }
 }
+
+#tt {
+    font-family: 'PlaywriteITModerna-Regular', sans-serif;
+  }
 
 #moving-grid {
     /* Defining a 20px block size for the grid */
@@ -31,10 +42,10 @@
             repeating-linear-gradient(
                 90deg,
                 transparent,
-                transparent 41px,
-                #d1d5db 41px,
-                #d1d5db 42px,
-                transparent 42px
+                transparent 3.1%,
+                #d1d5db 3.1%,
+                #d1d5db 3.2%,
+                transparent 3.2%
             ); /* Set the size of the grid cells */
     animation: moveGrid 15s linear infinite;
 }
