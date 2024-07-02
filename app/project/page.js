@@ -19,6 +19,7 @@ export default function project() {
 
   return (
     <>
+
       <nav className={`h-[15dvh] flex flex-row justify-center items-center gap-[6%] px-[5%] py-[2%] transition-all duration-[1500ms] delay-[3000ms] opacity-95 translate-y-0 `}>
         <a onClick={goBack} className="h-[50%] mr-auto flex cursor-pointer">
           <img className="h-full" src="bubble-gum-womans-head 1.gif" alt="" />
@@ -34,7 +35,7 @@ export default function project() {
       </nav>
       <svg
       onClick={goBack}
-      className="fixed cursor-pointer opacity-30 transition-all duration-700 hover:rotate-90 right-0"
+      className="cursor-pointer opacity-30 transition-all duration-700 hover:rotate-90 ml-auto mr-3"
         xmlns="http://www.w3.org/2000/svg"
         width="24"
         height="24"
@@ -48,6 +49,7 @@ export default function project() {
         <line x1="18" y1="6" x2="6" y2="18" />
         <line x1="6" y1="6" x2="18" y2="18" />
       </svg>
+
       <img className="w-[80%] mx-auto" src="About us.png" alt="" />
       <footer className="h-[45dvh] bg-pink-500 opacity-90 justify-center items-center">
         <div className="flex flex-row h-[80%] justify-between mx-[10%] items-center">
