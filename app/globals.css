@@ -76,3 +76,24 @@
     animation-delay: 500ms;
 }
 
+#tilt {
+    transform: perspective(1000px) rotateY(-5deg);
+    transition: all 1s ease-out;
+    transition-duration: 5000ms;
+  }
+  
+#tilt:hover {
+    transform: perspective(1000px) rotateY(-15deg);
+    transition-duration: 5000ms;
+  }
+
+#tilt2 {
+    transform: perspective(1000px) rotateY(5deg);
+    transition: all 1s ease-out;
+    transition-duration: 5000ms;
+  }
+  
+#tilt2:hover {
+    transform: perspective(1000px) rotateY(15deg);
+    transition-duration: 5000ms;
+  }  

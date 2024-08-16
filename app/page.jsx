@@ -34,7 +34,7 @@ export default function Home() {
 
         <a href="">Projects</a>
         <a href="">Experience</a>
-        <a href="">About Me</a>
+        <a href="about-me">About Me</a>
         <button className="bg-pink-500 text-white font-semibold py-2 px-4 rounded-full border-[1px] hover:shadow-3xl transition-all border-black hover:bg-pink-600">
           Download CV
         </button>
