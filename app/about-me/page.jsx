@@ -65,7 +65,10 @@ export default function About() {
           Download CV
         </button>
       </nav>
-      <div className="h-screen mx-[5%] text-xl mb-[10%] overflow-x-hidden">
+      <div className="overflow-hidden">
+
+
+      <div className="h-screen mx-[5%] text-xl mb-[10%]">
         <div id="tilt" className="my-[5%] h-1/3 items-center flex flex-row justify-evenly">
           <p className="w-[30%]">I wasn't always a product designer.<span className="font-semibold bg-gradient-to-r from-pink-600 via-pink-500 to-violet-500 text-transparent bg-clip-text animate-gradient" style={{WebkitBackgroundClip: 'text'}}>{"My story starts with lines of code, not lines on a screen . As a computer science student"}</span> I spent years diligently learning to code, becoming comfortable in the world of logic and algorithms. </p>
           <div className="h-full bg-center bg-no-repeat bg-[url('../public/bubble-gum-woman-waiting-and-looking-at-hourglass.gif')] w-[25rem] flex">
@@ -82,7 +85,7 @@ export default function About() {
           <img className="h-full" src="bubble-gum-computer-monitor-with-web-design-programs.gif" alt="" />
         </div>
       </div>
-      <div className="h-screen mx-[5%] mt-[5%] text-xl mb-[15%] overflow-x-hidden">
+      <div className="h-screen mx-[5%] mt-[5%] text-xl mb-[15%]">
         <div id="tilt2" className="my-[5%] h-1/3 items-center flex flex-row-reverse justify-evenly">
           <p className="w-2/5">Luckily, my colleagues saw what I didn't – a budding designer waiting to bloom.<span className="font-semibold bg-gradient-to-r from-pink-600 via-pink-500 to-violet-500 text-transparent bg-clip-text animate-gradient" style={{WebkitBackgroundClip: 'text'}}>Their nudge towards frontend design unveiled a world of possibilities, where user interfaces became my canvas.</span>  I dove headfirst, my coding skills a solid foundation for this new artistic pursuit.For a year and a half, I honed my UI design skills, crafting interfaces that were both beautiful and functional.  </p>
           <img className="h-full" src="bubble-gum-sitting-woman-has-a-chat-with-her-boss-on-computer.png" alt="" />
@@ -95,6 +98,7 @@ export default function About() {
           <p className="w-2/5"><span className="font-semibold bg-gradient-to-r from-pink-600 via-pink-500 to-violet-500 text-transparent bg-clip-text animate-gradient" style={{WebkitBackgroundClip: 'text'}}>Now, for over four years, I've been a happy and thriving product designer.</span> My journey may have begun with code, but it's design that truly allows me to create experiences that matter.</p>
           <img className="h-full" src="bubble-gum-woman-remote-working-at-laptop.gif" alt="" />
         </div>
+      </div>
       </div>
       <footer className="h-[45dvh] bg-pink-500 opacity-90 justify-center items-center">
 
