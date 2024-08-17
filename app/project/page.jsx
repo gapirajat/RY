@@ -6,6 +6,7 @@ import { useRouter } from "next/navigation"
 export default function project() {
   const router = useRouter();
 
+  //using home icon as back button
   const goBack = () => {
     console.log(router)
     try {
@@ -27,8 +28,8 @@ export default function project() {
         </a>
 
         <a href="">Projects</a>
-        <a href="">Experience</a>
-        <a href="">About Me</a>
+        <a href="experience">Experience</a>
+        <a href="about-me">About Me</a>
         <button className="bg-pink-500 text-white font-semibold py-2 px-4 rounded-full border-[1px] hover:shadow-3xl transition-all border-black hover:bg-pink-600">
           Download CV
         </button>
@@ -60,9 +61,9 @@ export default function project() {
             <p className="text-sm">Email - ruthambara.r.yadav@gmail.com</p>
             <p className="text-sm">Contact - +91 7744857116</p>
             <div className="flex flex-row text-white text-sm w-[70%] items-center justify-between">
-              <a href="">LINKEDIN</a>
-              <a href="">INSTAGRAM</a>
-              <a href="">YOUTUBE</a>
+              <a href="https://www.linkedin.com/in/rutambhara-yadav-ab6358192/">LINKEDIN</a>
+              <a href="https://www.instagram.com/rutambhara.yadav/">INSTAGRAM</a>
+              <a href="https://www.youtube.com/@rutambhara.Yadav.">YOUTUBE</a>
             </div>
           </div>
           <img className="h-[170%] mb-[10%] " src="bubble-gum-woman-waiting-and-looking-at-hourglass.gif" alt="" />
